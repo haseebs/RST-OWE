@@ -1,0 +1,94 @@
+[GPU]
+DisableCuda = False
+GPUs = 0
+
+[Training]
+; Which KGC model to use: ComplEx, TransE, TransR, DistMult
+LinkPredictionModelType = ComplEx
+Epochs = 1000
+BatchSize = 256
+; Dimensionality of Embedding file is used, if one is given
+EmbeddingDimensionality = 300
+LearningRate = 0.001
+LearningRateSchedule = 70,150,300
+LearningRateGammas = 0.1,0.1,0.1
+InitializeEmbeddingWithAllEntities = False
+; Whether we want to initialize with embeddings obtained from OpenKE
+; These are read from the embedding subdir
+InitializeWithPretrainedKGCEmbedding = True
+; Type of OWE transformation to use: Linear, Affine, FCN
+TransformationType = RelationBased
+; Type of OWE encoder to use: Average, LSTM
+EncoderType = Average
+; Whether we use only heads or heads+tails during optimization (tail prediction)
+UseTailsToOptimize = False
+; Which loss to use: Pairwise (Euclidean) or Cosine
+Loss = Pairwise
+; What to use as an UNK token: Zero, Average, TODO
+UNKType = Zero
+; How much word dropout to use
+AverageWordDropout = 0
+; What should be iterated during training: triplets or entities
+IterTriplets = True
+ClusterRelations = True
+ClusterRelationsType = Tails
+ClusterRelationsBySize = False
+ClusterSimilarityFactor = 0.8
+ClusterFormingIterations = 6
+
+[FCN]
+FCNUseSigmoid = False
+FCNLayers = 1
+FCNDropout = 0.5
+FCNHiddenDim = 300
+
+[LSTM]
+LSTMOutputDim = 300
+LSTMBidirectional = False
+
+[Evaluation]
+; Note: most of the options below will slow down the training if true
+ValidateEvery = 1
+; Whether we should use Target Filtering (from ConMask)
+UseTargetFilteringShi = False
+; Prints nearest neighbour entities to the test entities
+PrintTestNN = False
+; Prints nearest neighbour entities to the training entities
+PrintTrainNN = False
+; Baseline where evaluation is done by randomly corrupting heads
+EvalRandomHeads = False
+; Calculate mean nearest neighbour rank
+CalculateNNMeanRank = False
+; Target filtering baseline from ConMask
+ShiTargetFilteringBaseline = False
+; Generate embeddings to view using tensorboard projector
+GetTensorboardEmbeddings = False
+PrintRelationPerformance = True
+
+[EarlyStopping]
+EarlyStopping = True
+EarlyStoppingThreshold = 0.001
+EarlyStoppingLastX = 10
+EarlyStoppingMinEpochs = 100
+
+[Entity2Text]
+; Path to the pretrained word embeddings
+PretrainedEmbeddingFile = /hdd/workspace/owe/zero-shot-kgc-backup/mntdata/embeddings/wikipedia2vec/enwiki_20180420_300d.bin
+; Whether we should read the entity data from the entitiy2wikidata file
+ConvertEntities = True
+ConvertEntitiesWithMultiprocessing = True
+; Tries to convert entity to a single token and match that token in embedding.
+; Uses wikipedia link suffix as token.
+; Fallback is to avg all lemmas.
+MatchTokenInEmbedding = False
+; Tries to convert entity into single token and match that token in embedding.
+; This one uses label of the entity where spaces are replaced by underscores.
+MatchLabelInEmbedding = False
+
+[Dataset]
+TrainFile = train.txt
+ValidationFile = valid_zero.txt
+TestFile = test_zero.txt
+SkipHeader = False
+; TAB or SPACE
+SplitSymbol = TAB

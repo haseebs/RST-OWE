@@ -1,0 +1,498 @@
+01:14:32: INFO: Git Hash: ee5d78140ea2d9245554bb8c819ca16df700d794
+
+01:14:32: INFO: Reading config from: /home/haseebs/workspace/experiments/0007_relation_based_fb_lr/config.ini
+01:14:32: INFO: Using entity2wikidata.json as wikidata file
+01:14:33: INFO: 12324 distinct entities in train having 235 relations (242489 triples).
+01:14:33: INFO: 6038 distinct entities in validation having 220 relations (9424 triples).
+01:14:33: INFO: 8897 distinct entities in test having 224 relations (22393 triples).
+01:14:33: INFO: Working with: 14405 distinct entities having 235 relations.
+01:14:33: INFO: Converting entities...
+01:14:33: INFO: Building Vocab...
+01:14:33: INFO: Building triples...
+01:14:41: INFO: Loading word vectors from: /hdd/workspace/owe/zero-shot-kgc-backup/mntdata/embeddings/wikipedia2vec/enwiki_20180420_300d.bin...
+01:15:53: INFO: Building embedding matrix
+01:15:53: INFO: Loading word vectors for entities...
+01:15:55: INFO: Matched entities with 'ID': 0
+01:15:55: INFO: Matched entities with 'ENTITIY/ID' (wiki2vec notation): 0
+01:15:55: INFO: Matched entities with augmented phrase as wiki2vec entity (level:count): {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0}
+01:15:55: INFO: Matched entities with augmented phrase (level:count): {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0}
+01:15:55: INFO: Unmatched entities: 0
+01:15:55: INFO: Created word embedding with shape: torch.Size([18804, 300])
+01:15:56: INFO: LinkPredictionModelType: ComplEx
+01:15:56: INFO: Initialized ComplEx model with 12324 entities, 235 relations embedded with 300 dimensions
+01:15:56: INFO: Loading pretrained embeddings from /home/haseebs/workspace/experiments/tab3_complex300d_fb15k-237/embeddings into ComplEx model
+01:15:56: INFO: Loading from emb ((12324, 300)) to our emb (torch.Size([12324, 300]))
+01:15:56: INFO: Loaded 12324/12324 rows.
+01:15:56: INFO: Loading from emb ((12324, 300)) to our emb (torch.Size([12324, 300]))
+01:15:56: INFO: Loaded 12324/12324 rows.
+01:15:56: INFO: Loading from emb ((235, 300)) to our emb (torch.Size([235, 300]))
+01:15:56: INFO: Loaded 235/235 rows.
+01:15:56: INFO: Loading from emb ((235, 300)) to our emb (torch.Size([235, 300]))
+01:15:56: INFO: Loaded 235/235 rows.
+01:15:56: WARNING: Config setting: 'cuda' not found. Returning None!
+01:15:59: INFO: Using averaging encoder
+01:16:00: INFO: Using Relationship based transformation
+01:16:00: INFO: Starting evaluation on validation set.
+01:16:00: INFO: Performing evaluation without using the transformation
+01:16:28: INFO: [Eval: validation] Epoch: 0
+01:16:28: INFO: [Eval: validation]   0.18 Hits@1 (%)
+01:16:28: INFO: [Eval: validation]   0.38 Hits@3 (%)
+01:16:28: INFO: [Eval: validation]   1.02 Hits@10 (%)
+01:16:28: INFO: [Eval: validation]   0.51 MRR (filtered) (%)
+01:16:28: INFO: [Eval: validation]   0.50 MRR (raw) (%)
+01:16:28: INFO: [Eval: validation] Mean rank: 6527
+01:16:28: INFO: [Eval: validation] Mean rank raw: 6540
+01:16:28: INFO: Changed lr from 0.001 to 0.0001
+01:19:05: INFO: Git Hash: ee5d78140ea2d9245554bb8c819ca16df700d794
+
+01:19:05: INFO: Reading config from: /home/haseebs/workspace/experiments/0007_relation_based_fb_lr/config.ini
+01:19:05: INFO: Using entity2wikidata.json as wikidata file
+01:19:05: INFO: 12324 distinct entities in train having 235 relations (242489 triples).
+01:19:05: INFO: 6038 distinct entities in validation having 220 relations (9424 triples).
+01:19:05: INFO: 8897 distinct entities in test having 224 relations (22393 triples).
+01:19:05: INFO: Working with: 14405 distinct entities having 235 relations.
+01:19:05: INFO: Converting entities...
+01:19:06: INFO: Building Vocab...
+01:19:06: INFO: Building triples...
+01:19:14: INFO: Loading word vectors from: /hdd/workspace/owe/zero-shot-kgc-backup/mntdata/embeddings/wikipedia2vec/enwiki_20180420_300d.bin...
+01:20:25: INFO: Building embedding matrix
+01:20:25: INFO: Loading word vectors for entities...
+01:20:27: INFO: Matched entities with 'ID': 0
+01:20:27: INFO: Matched entities with 'ENTITIY/ID' (wiki2vec notation): 0
+01:20:27: INFO: Matched entities with augmented phrase as wiki2vec entity (level:count): {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0}
+01:20:27: INFO: Matched entities with augmented phrase (level:count): {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0}
+01:20:27: INFO: Unmatched entities: 0
+01:20:27: INFO: Created word embedding with shape: torch.Size([18804, 300])
+01:20:27: INFO: LinkPredictionModelType: ComplEx
+01:20:27: INFO: Initialized ComplEx model with 12324 entities, 235 relations embedded with 300 dimensions
+01:20:28: INFO: Loading pretrained embeddings from /home/haseebs/workspace/experiments/tab3_complex300d_fb15k-237/embeddings into ComplEx model
+01:20:28: INFO: Loading from emb ((12324, 300)) to our emb (torch.Size([12324, 300]))
+01:20:28: INFO: Loaded 12324/12324 rows.
+01:20:28: INFO: Loading from emb ((12324, 300)) to our emb (torch.Size([12324, 300]))
+01:20:28: INFO: Loaded 12324/12324 rows.
+01:20:28: INFO: Loading from emb ((235, 300)) to our emb (torch.Size([235, 300]))
+01:20:28: INFO: Loaded 235/235 rows.
+01:20:28: INFO: Loading from emb ((235, 300)) to our emb (torch.Size([235, 300]))
+01:20:28: INFO: Loaded 235/235 rows.
+01:20:28: WARNING: Config setting: 'cuda' not found. Returning None!
+01:20:31: INFO: Using averaging encoder
+01:20:31: INFO: Using Relationship based transformation
+01:20:31: INFO: Starting evaluation on validation set.
+01:20:31: INFO: Performing evaluation without using the transformation
+01:21:00: INFO: [Eval: validation] Epoch: 0
+01:21:00: INFO: [Eval: validation]   0.16 Hits@1 (%)
+01:21:00: INFO: [Eval: validation]   0.38 Hits@3 (%)
+01:21:00: INFO: [Eval: validation]   0.85 Hits@10 (%)
+01:21:00: INFO: [Eval: validation]   0.43 MRR (filtered) (%)
+01:21:00: INFO: [Eval: validation]   0.42 MRR (raw) (%)
+01:21:00: INFO: [Eval: validation] Mean rank: 6726
+01:21:00: INFO: [Eval: validation] Mean rank raw: 6739
+01:24:30: INFO: At epoch 1. Train Loss: 5.923063946675651 
+01:24:30: INFO: Starting evaluation on validation set.
+01:24:59: INFO: [Eval: validation] Epoch: 1
+01:24:59: INFO: [Eval: validation]  28.68 Hits@1 (%)
+01:24:59: INFO: [Eval: validation]  39.83 Hits@3 (%)
+01:24:59: INFO: [Eval: validation]  51.56 Hits@10 (%)
+01:24:59: INFO: [Eval: validation]  36.60 MRR (filtered) (%)
+01:24:59: INFO: [Eval: validation]  26.89 MRR (raw) (%)
+01:24:59: INFO: [Eval: validation] Mean rank: 240
+01:24:59: INFO: [Eval: validation] Mean rank raw: 254
+01:24:59: INFO: Saving checkpoint to /home/haseebs/workspace/experiments/0007_relation_based_fb_lr/checkpoint.OWE.pth.tar.
+01:25:00: INFO: Saved best checkpoint to /home/haseebs/workspace/experiments/0007_relation_based_fb_lr/best_checkpoint.OWE.pth.tar.
+01:25:00: INFO: Changed lr from 0.001 to 0.0001
+01:28:33: INFO: At epoch 2. Train Loss: 5.083399668524537 
+01:28:33: INFO: Starting evaluation on validation set.
+01:29:01: INFO: [Eval: validation] Epoch: 2
+01:29:01: INFO: [Eval: validation]  28.90 Hits@1 (%)
+01:29:01: INFO: [Eval: validation]  40.04 Hits@3 (%)
+01:29:01: INFO: [Eval: validation]  52.02 Hits@10 (%)
+01:29:01: INFO: [Eval: validation]  36.84 MRR (filtered) (%)
+01:29:01: INFO: [Eval: validation]  27.19 MRR (raw) (%)
+01:29:01: INFO: [Eval: validation] Mean rank: 242
+01:29:01: INFO: [Eval: validation] Mean rank raw: 255
+01:29:01: INFO: Saving checkpoint to /home/haseebs/workspace/experiments/0007_relation_based_fb_lr/checkpoint.OWE.pth.tar.
+01:29:08: INFO: Saved best checkpoint to /home/haseebs/workspace/experiments/0007_relation_based_fb_lr/best_checkpoint.OWE.pth.tar.
+01:32:41: INFO: At epoch 3. Train Loss: 4.991381664819356 
+01:32:41: INFO: Starting evaluation on validation set.
+01:33:10: INFO: [Eval: validation] Epoch: 3
+01:33:10: INFO: [Eval: validation]  29.19 Hits@1 (%)
+01:33:10: INFO: [Eval: validation]  40.44 Hits@3 (%)
+01:33:10: INFO: [Eval: validation]  52.12 Hits@10 (%)
+01:33:10: INFO: [Eval: validation]  37.09 MRR (filtered) (%)
+01:33:10: INFO: [Eval: validation]  27.46 MRR (raw) (%)
+01:33:10: INFO: [Eval: validation] Mean rank: 243
+01:33:10: INFO: [Eval: validation] Mean rank raw: 257
+01:33:10: INFO: Saving checkpoint to /home/haseebs/workspace/experiments/0007_relation_based_fb_lr/checkpoint.OWE.pth.tar.
+01:33:17: INFO: Saved best checkpoint to /home/haseebs/workspace/experiments/0007_relation_based_fb_lr/best_checkpoint.OWE.pth.tar.
+01:36:50: INFO: At epoch 4. Train Loss: 4.8991876830531575 
+01:36:50: INFO: Starting evaluation on validation set.
+01:37:19: INFO: [Eval: validation] Epoch: 4
+01:37:19: INFO: [Eval: validation]  29.40 Hits@1 (%)
+01:37:19: INFO: [Eval: validation]  40.64 Hits@3 (%)
+01:37:19: INFO: [Eval: validation]  52.40 Hits@10 (%)
+01:37:19: INFO: [Eval: validation]  37.31 MRR (filtered) (%)
+01:37:19: INFO: [Eval: validation]  27.66 MRR (raw) (%)
+01:37:19: INFO: [Eval: validation] Mean rank: 246
+01:37:19: INFO: [Eval: validation] Mean rank raw: 260
+01:37:19: INFO: Saving checkpoint to /home/haseebs/workspace/experiments/0007_relation_based_fb_lr/checkpoint.OWE.pth.tar.
+01:37:25: INFO: Saved best checkpoint to /home/haseebs/workspace/experiments/0007_relation_based_fb_lr/best_checkpoint.OWE.pth.tar.
+01:40:58: INFO: At epoch 5. Train Loss: 4.83090821147468 
+01:40:58: INFO: Starting evaluation on validation set.
+01:41:27: INFO: [Eval: validation] Epoch: 5
+01:41:27: INFO: [Eval: validation]  29.44 Hits@1 (%)
+01:41:27: INFO: [Eval: validation]  40.75 Hits@3 (%)
+01:41:27: INFO: [Eval: validation]  52.58 Hits@10 (%)
+01:41:27: INFO: [Eval: validation]  37.38 MRR (filtered) (%)
+01:41:27: INFO: [Eval: validation]  27.78 MRR (raw) (%)
+01:41:27: INFO: [Eval: validation] Mean rank: 249
+01:41:27: INFO: [Eval: validation] Mean rank raw: 263
+01:41:27: INFO: Saving checkpoint to /home/haseebs/workspace/experiments/0007_relation_based_fb_lr/checkpoint.OWE.pth.tar.
+01:41:34: INFO: Saved best checkpoint to /home/haseebs/workspace/experiments/0007_relation_based_fb_lr/best_checkpoint.OWE.pth.tar.
+01:45:05: INFO: At epoch 6. Train Loss: 4.754621960442781 
+01:45:05: INFO: Starting evaluation on validation set.
+01:45:34: INFO: [Eval: validation] Epoch: 6
+01:45:34: INFO: [Eval: validation]  29.42 Hits@1 (%)
+01:45:34: INFO: [Eval: validation]  40.75 Hits@3 (%)
+01:45:34: INFO: [Eval: validation]  52.58 Hits@10 (%)
+01:45:34: INFO: [Eval: validation]  37.38 MRR (filtered) (%)
+01:45:34: INFO: [Eval: validation]  27.84 MRR (raw) (%)
+01:45:34: INFO: [Eval: validation] Mean rank: 252
+01:45:34: INFO: [Eval: validation] Mean rank raw: 266
+01:45:34: INFO: Saving checkpoint to /home/haseebs/workspace/experiments/0007_relation_based_fb_lr/checkpoint.OWE.pth.tar.
+01:49:11: INFO: At epoch 7. Train Loss: 4.6731177598615234 
+01:49:11: INFO: Starting evaluation on validation set.
+01:49:40: INFO: [Eval: validation] Epoch: 7
+01:49:40: INFO: [Eval: validation]  29.30 Hits@1 (%)
+01:49:40: INFO: [Eval: validation]  40.82 Hits@3 (%)
+01:49:40: INFO: [Eval: validation]  52.77 Hits@10 (%)
+01:49:40: INFO: [Eval: validation]  37.34 MRR (filtered) (%)
+01:49:40: INFO: [Eval: validation]  27.90 MRR (raw) (%)
+01:49:40: INFO: [Eval: validation] Mean rank: 254
+01:49:40: INFO: [Eval: validation] Mean rank raw: 267
+01:49:40: INFO: Saving checkpoint to /home/haseebs/workspace/experiments/0007_relation_based_fb_lr/checkpoint.OWE.pth.tar.
+01:53:16: INFO: At epoch 8. Train Loss: 4.609890802500117 
+01:53:16: INFO: Starting evaluation on validation set.
+01:53:45: INFO: [Eval: validation] Epoch: 8
+01:53:45: INFO: [Eval: validation]  29.14 Hits@1 (%)
+01:53:45: INFO: [Eval: validation]  40.57 Hits@3 (%)
+01:53:45: INFO: [Eval: validation]  52.70 Hits@10 (%)
+01:53:45: INFO: [Eval: validation]  37.22 MRR (filtered) (%)
+01:53:45: INFO: [Eval: validation]  27.97 MRR (raw) (%)
+01:53:45: INFO: [Eval: validation] Mean rank: 260
+01:53:45: INFO: [Eval: validation] Mean rank raw: 273
+01:53:45: INFO: Saving checkpoint to /home/haseebs/workspace/experiments/0007_relation_based_fb_lr/checkpoint.OWE.pth.tar.
+01:57:21: INFO: At epoch 9. Train Loss: 4.551840259053033 
+01:57:21: INFO: Starting evaluation on validation set.
+01:57:50: INFO: [Eval: validation] Epoch: 9
+01:57:50: INFO: [Eval: validation]  29.10 Hits@1 (%)
+01:57:50: INFO: [Eval: validation]  40.68 Hits@3 (%)
+01:57:50: INFO: [Eval: validation]  52.72 Hits@10 (%)
+01:57:50: INFO: [Eval: validation]  37.21 MRR (filtered) (%)
+01:57:50: INFO: [Eval: validation]  28.03 MRR (raw) (%)
+01:57:50: INFO: [Eval: validation] Mean rank: 262
+01:57:50: INFO: [Eval: validation] Mean rank raw: 276
+01:57:50: INFO: Saving checkpoint to /home/haseebs/workspace/experiments/0007_relation_based_fb_lr/checkpoint.OWE.pth.tar.
+02:01:26: INFO: At epoch 10. Train Loss: 4.496414443611596 
+02:01:26: INFO: Starting evaluation on validation set.
+02:01:55: INFO: [Eval: validation] Epoch: 10
+02:01:55: INFO: [Eval: validation]  29.16 Hits@1 (%)
+02:01:55: INFO: [Eval: validation]  40.67 Hits@3 (%)
+02:01:55: INFO: [Eval: validation]  52.76 Hits@10 (%)
+02:01:55: INFO: [Eval: validation]  37.21 MRR (filtered) (%)
+02:01:55: INFO: [Eval: validation]  28.12 MRR (raw) (%)
+02:01:55: INFO: [Eval: validation] Mean rank: 272
+02:01:55: INFO: [Eval: validation] Mean rank raw: 285
+02:01:55: INFO: Saving checkpoint to /home/haseebs/workspace/experiments/0007_relation_based_fb_lr/checkpoint.OWE.pth.tar.
+02:05:31: INFO: At epoch 11. Train Loss: 4.430771880511996 
+02:05:31: INFO: Starting evaluation on validation set.
+02:05:59: INFO: [Eval: validation] Epoch: 11
+02:05:59: INFO: [Eval: validation]  29.03 Hits@1 (%)
+02:05:59: INFO: [Eval: validation]  40.56 Hits@3 (%)
+02:05:59: INFO: [Eval: validation]  52.68 Hits@10 (%)
+02:05:59: INFO: [Eval: validation]  37.11 MRR (filtered) (%)
+02:05:59: INFO: [Eval: validation]  28.17 MRR (raw) (%)
+02:05:59: INFO: [Eval: validation] Mean rank: 284
+02:05:59: INFO: [Eval: validation] Mean rank raw: 297
+02:05:59: INFO: Saving checkpoint to /home/haseebs/workspace/experiments/0007_relation_based_fb_lr/checkpoint.OWE.pth.tar.
+02:09:35: INFO: At epoch 12. Train Loss: 4.373316558353006 
+02:09:35: INFO: Starting evaluation on validation set.
+02:10:04: INFO: [Eval: validation] Epoch: 12
+02:10:04: INFO: [Eval: validation]  29.09 Hits@1 (%)
+02:10:04: INFO: [Eval: validation]  40.52 Hits@3 (%)
+02:10:04: INFO: [Eval: validation]  52.68 Hits@10 (%)
+02:10:04: INFO: [Eval: validation]  37.15 MRR (filtered) (%)
+02:10:04: INFO: [Eval: validation]  28.26 MRR (raw) (%)
+02:10:04: INFO: [Eval: validation] Mean rank: 294
+02:10:04: INFO: [Eval: validation] Mean rank raw: 308
+02:10:04: INFO: Saving checkpoint to /home/haseebs/workspace/experiments/0007_relation_based_fb_lr/checkpoint.OWE.pth.tar.
+02:13:41: INFO: At epoch 13. Train Loss: 4.325758894284566 
+02:13:41: INFO: Starting evaluation on validation set.
+02:14:10: INFO: [Eval: validation] Epoch: 13
+02:14:10: INFO: [Eval: validation]  29.16 Hits@1 (%)
+02:14:10: INFO: [Eval: validation]  40.47 Hits@3 (%)
+02:14:10: INFO: [Eval: validation]  52.60 Hits@10 (%)
+02:14:10: INFO: [Eval: validation]  37.11 MRR (filtered) (%)
+02:14:10: INFO: [Eval: validation]  28.27 MRR (raw) (%)
+02:14:10: INFO: [Eval: validation] Mean rank: 314
+02:14:10: INFO: [Eval: validation] Mean rank raw: 327
+02:14:10: INFO: Saving checkpoint to /home/haseebs/workspace/experiments/0007_relation_based_fb_lr/checkpoint.OWE.pth.tar.
+02:17:46: INFO: At epoch 14. Train Loss: 4.2652396036602775 
+02:17:46: INFO: Starting evaluation on validation set.
+02:18:15: INFO: [Eval: validation] Epoch: 14
+02:18:15: INFO: [Eval: validation]  29.03 Hits@1 (%)
+02:18:15: INFO: [Eval: validation]  40.31 Hits@3 (%)
+02:18:15: INFO: [Eval: validation]  52.26 Hits@10 (%)
+02:18:15: INFO: [Eval: validation]  36.95 MRR (filtered) (%)
+02:18:15: INFO: [Eval: validation]  28.30 MRR (raw) (%)
+02:18:15: INFO: [Eval: validation] Mean rank: 345
+02:18:15: INFO: [Eval: validation] Mean rank raw: 358
+02:18:15: INFO: Saving checkpoint to /home/haseebs/workspace/experiments/0007_relation_based_fb_lr/checkpoint.OWE.pth.tar.
+02:21:52: INFO: At epoch 15. Train Loss: 4.213546980282425 
+02:21:52: INFO: Starting evaluation on validation set.
+02:22:20: INFO: [Eval: validation] Epoch: 15
+02:22:20: INFO: [Eval: validation]  29.07 Hits@1 (%)
+02:22:20: INFO: [Eval: validation]  40.45 Hits@3 (%)
+02:22:20: INFO: [Eval: validation]  52.09 Hits@10 (%)
+02:22:20: INFO: [Eval: validation]  37.00 MRR (filtered) (%)
+02:22:20: INFO: [Eval: validation]  28.37 MRR (raw) (%)
+02:22:20: INFO: [Eval: validation] Mean rank: 359
+02:22:20: INFO: [Eval: validation] Mean rank raw: 372
+02:22:20: INFO: Saving checkpoint to /home/haseebs/workspace/experiments/0007_relation_based_fb_lr/checkpoint.OWE.pth.tar.
+02:25:57: INFO: At epoch 16. Train Loss: 4.164293442848866 
+02:25:57: INFO: Starting evaluation on validation set.
+02:26:26: INFO: [Eval: validation] Epoch: 16
+02:26:26: INFO: [Eval: validation]  29.01 Hits@1 (%)
+02:26:26: INFO: [Eval: validation]  40.45 Hits@3 (%)
+02:26:26: INFO: [Eval: validation]  51.99 Hits@10 (%)
+02:26:26: INFO: [Eval: validation]  36.92 MRR (filtered) (%)
+02:26:26: INFO: [Eval: validation]  28.38 MRR (raw) (%)
+02:26:26: INFO: [Eval: validation] Mean rank: 380
+02:26:26: INFO: [Eval: validation] Mean rank raw: 393
+02:26:26: INFO: Saving checkpoint to /home/haseebs/workspace/experiments/0007_relation_based_fb_lr/checkpoint.OWE.pth.tar.
+02:30:02: INFO: At epoch 17. Train Loss: 4.110803913718034 
+02:30:02: INFO: Starting evaluation on validation set.
+02:30:32: INFO: [Eval: validation] Epoch: 17
+02:30:32: INFO: [Eval: validation]  29.03 Hits@1 (%)
+02:30:32: INFO: [Eval: validation]  40.22 Hits@3 (%)
+02:30:32: INFO: [Eval: validation]  51.77 Hits@10 (%)
+02:30:32: INFO: [Eval: validation]  36.87 MRR (filtered) (%)
+02:30:32: INFO: [Eval: validation]  28.41 MRR (raw) (%)
+02:30:32: INFO: [Eval: validation] Mean rank: 401
+02:30:32: INFO: [Eval: validation] Mean rank raw: 415
+02:30:32: INFO: Saving checkpoint to /home/haseebs/workspace/experiments/0007_relation_based_fb_lr/checkpoint.OWE.pth.tar.
+02:34:05: INFO: At epoch 18. Train Loss: 4.072999218345191 
+02:34:05: INFO: Starting evaluation on validation set.
+02:34:33: INFO: [Eval: validation] Epoch: 18
+02:34:33: INFO: [Eval: validation]  28.93 Hits@1 (%)
+02:34:33: INFO: [Eval: validation]  40.20 Hits@3 (%)
+02:34:33: INFO: [Eval: validation]  51.75 Hits@10 (%)
+02:34:33: INFO: [Eval: validation]  36.79 MRR (filtered) (%)
+02:34:33: INFO: [Eval: validation]  28.43 MRR (raw) (%)
+02:34:33: INFO: [Eval: validation] Mean rank: 422
+02:34:33: INFO: [Eval: validation] Mean rank raw: 436
+02:34:33: INFO: Saving checkpoint to /home/haseebs/workspace/experiments/0007_relation_based_fb_lr/checkpoint.OWE.pth.tar.
+02:38:11: INFO: At epoch 19. Train Loss: 4.033689239105595 
+02:38:11: INFO: Starting evaluation on validation set.
+02:38:39: INFO: [Eval: validation] Epoch: 19
+02:38:39: INFO: [Eval: validation]  28.86 Hits@1 (%)
+02:38:39: INFO: [Eval: validation]  40.13 Hits@3 (%)
+02:38:39: INFO: [Eval: validation]  51.63 Hits@10 (%)
+02:38:39: INFO: [Eval: validation]  36.68 MRR (filtered) (%)
+02:38:39: INFO: [Eval: validation]  28.36 MRR (raw) (%)
+02:38:39: INFO: [Eval: validation] Mean rank: 452
+02:38:39: INFO: [Eval: validation] Mean rank raw: 465
+02:38:39: INFO: Saving checkpoint to /home/haseebs/workspace/experiments/0007_relation_based_fb_lr/checkpoint.OWE.pth.tar.
+02:38:43: INFO: Changed lr from 0.0001 to 1e-05
+02:42:16: INFO: At epoch 20. Train Loss: 3.9923587018930458 
+02:42:16: INFO: Starting evaluation on validation set.
+02:42:45: INFO: [Eval: validation] Epoch: 20
+02:42:45: INFO: [Eval: validation]  28.88 Hits@1 (%)
+02:42:45: INFO: [Eval: validation]  40.18 Hits@3 (%)
+02:42:45: INFO: [Eval: validation]  51.59 Hits@10 (%)
+02:42:45: INFO: [Eval: validation]  36.70 MRR (filtered) (%)
+02:42:45: INFO: [Eval: validation]  28.38 MRR (raw) (%)
+02:42:45: INFO: [Eval: validation] Mean rank: 453
+02:42:45: INFO: [Eval: validation] Mean rank raw: 467
+02:42:45: INFO: Saving checkpoint to /home/haseebs/workspace/experiments/0007_relation_based_fb_lr/checkpoint.OWE.pth.tar.
+02:46:22: INFO: At epoch 21. Train Loss: 3.981541872024536 
+02:46:22: INFO: Starting evaluation on validation set.
+02:46:51: INFO: [Eval: validation] Epoch: 21
+02:46:51: INFO: [Eval: validation]  28.87 Hits@1 (%)
+02:46:51: INFO: [Eval: validation]  40.14 Hits@3 (%)
+02:46:51: INFO: [Eval: validation]  51.63 Hits@10 (%)
+02:46:51: INFO: [Eval: validation]  36.69 MRR (filtered) (%)
+02:46:51: INFO: [Eval: validation]  28.37 MRR (raw) (%)
+02:46:51: INFO: [Eval: validation] Mean rank: 455
+02:46:51: INFO: [Eval: validation] Mean rank raw: 468
+02:46:51: INFO: Saving checkpoint to /home/haseebs/workspace/experiments/0007_relation_based_fb_lr/checkpoint.OWE.pth.tar.
+02:50:27: INFO: At epoch 22. Train Loss: 3.9772265095750994 
+02:50:27: INFO: Starting evaluation on validation set.
+02:50:55: INFO: [Eval: validation] Epoch: 22
+02:50:55: INFO: [Eval: validation]  28.84 Hits@1 (%)
+02:50:55: INFO: [Eval: validation]  40.16 Hits@3 (%)
+02:50:55: INFO: [Eval: validation]  51.59 Hits@10 (%)
+02:50:55: INFO: [Eval: validation]  36.67 MRR (filtered) (%)
+02:50:55: INFO: [Eval: validation]  28.38 MRR (raw) (%)
+02:50:55: INFO: [Eval: validation] Mean rank: 461
+02:50:55: INFO: [Eval: validation] Mean rank raw: 475
+02:50:55: INFO: Saving checkpoint to /home/haseebs/workspace/experiments/0007_relation_based_fb_lr/checkpoint.OWE.pth.tar.
+02:54:32: INFO: At epoch 23. Train Loss: 3.9811232024607275 
+02:54:32: INFO: Starting evaluation on validation set.
+02:55:01: INFO: [Eval: validation] Epoch: 23
+02:55:01: INFO: [Eval: validation]  28.86 Hits@1 (%)
+02:55:01: INFO: [Eval: validation]  40.14 Hits@3 (%)
+02:55:01: INFO: [Eval: validation]  51.61 Hits@10 (%)
+02:55:01: INFO: [Eval: validation]  36.67 MRR (filtered) (%)
+02:55:01: INFO: [Eval: validation]  28.37 MRR (raw) (%)
+02:55:01: INFO: [Eval: validation] Mean rank: 463
+02:55:01: INFO: [Eval: validation] Mean rank raw: 476
+02:55:01: INFO: Saving checkpoint to /home/haseebs/workspace/experiments/0007_relation_based_fb_lr/checkpoint.OWE.pth.tar.
+02:58:38: INFO: At epoch 24. Train Loss: 3.9709056517745873 
+02:58:38: INFO: Starting evaluation on validation set.
+02:59:06: INFO: [Eval: validation] Epoch: 24
+02:59:06: INFO: [Eval: validation]  28.84 Hits@1 (%)
+02:59:06: INFO: [Eval: validation]  40.15 Hits@3 (%)
+02:59:06: INFO: [Eval: validation]  51.62 Hits@10 (%)
+02:59:06: INFO: [Eval: validation]  36.66 MRR (filtered) (%)
+02:59:06: INFO: [Eval: validation]  28.37 MRR (raw) (%)
+02:59:06: INFO: [Eval: validation] Mean rank: 465
+02:59:06: INFO: [Eval: validation] Mean rank raw: 479
+02:59:06: INFO: Saving checkpoint to /home/haseebs/workspace/experiments/0007_relation_based_fb_lr/checkpoint.OWE.pth.tar.
+03:02:43: INFO: At epoch 25. Train Loss: 3.967718763944972 
+03:02:43: INFO: Starting evaluation on validation set.
+03:03:12: INFO: [Eval: validation] Epoch: 25
+03:03:12: INFO: [Eval: validation]  28.86 Hits@1 (%)
+03:03:12: INFO: [Eval: validation]  40.15 Hits@3 (%)
+03:03:12: INFO: [Eval: validation]  51.62 Hits@10 (%)
+03:03:12: INFO: [Eval: validation]  36.68 MRR (filtered) (%)
+03:03:12: INFO: [Eval: validation]  28.39 MRR (raw) (%)
+03:03:12: INFO: [Eval: validation] Mean rank: 468
+03:03:12: INFO: [Eval: validation] Mean rank raw: 482
+03:03:12: INFO: Saving checkpoint to /home/haseebs/workspace/experiments/0007_relation_based_fb_lr/checkpoint.OWE.pth.tar.
+03:06:49: INFO: At epoch 26. Train Loss: 3.9563450760479215 
+03:06:49: INFO: Starting evaluation on validation set.
+03:07:18: INFO: [Eval: validation] Epoch: 26
+03:07:18: INFO: [Eval: validation]  28.92 Hits@1 (%)
+03:07:18: INFO: [Eval: validation]  40.15 Hits@3 (%)
+03:07:18: INFO: [Eval: validation]  51.57 Hits@10 (%)
+03:07:18: INFO: [Eval: validation]  36.70 MRR (filtered) (%)
+03:07:18: INFO: [Eval: validation]  28.41 MRR (raw) (%)
+03:07:18: INFO: [Eval: validation] Mean rank: 473
+03:07:18: INFO: [Eval: validation] Mean rank raw: 486
+03:07:18: INFO: Saving checkpoint to /home/haseebs/workspace/experiments/0007_relation_based_fb_lr/checkpoint.OWE.pth.tar.
+03:10:54: INFO: At epoch 27. Train Loss: 3.953106239375183 
+03:10:54: INFO: Starting evaluation on validation set.
+03:11:23: INFO: [Eval: validation] Epoch: 27
+03:11:23: INFO: [Eval: validation]  28.88 Hits@1 (%)
+03:11:23: INFO: [Eval: validation]  40.14 Hits@3 (%)
+03:11:23: INFO: [Eval: validation]  51.57 Hits@10 (%)
+03:11:23: INFO: [Eval: validation]  36.68 MRR (filtered) (%)
+03:11:23: INFO: [Eval: validation]  28.40 MRR (raw) (%)
+03:11:23: INFO: [Eval: validation] Mean rank: 473
+03:11:23: INFO: [Eval: validation] Mean rank raw: 487
+03:11:23: INFO: Saving checkpoint to /home/haseebs/workspace/experiments/0007_relation_based_fb_lr/checkpoint.OWE.pth.tar.
+03:14:59: INFO: At epoch 28. Train Loss: 3.955904006958008 
+03:14:59: INFO: Starting evaluation on validation set.
+03:15:28: INFO: [Eval: validation] Epoch: 28
+03:15:28: INFO: [Eval: validation]  28.89 Hits@1 (%)
+03:15:28: INFO: [Eval: validation]  40.12 Hits@3 (%)
+03:15:28: INFO: [Eval: validation]  51.54 Hits@10 (%)
+03:15:28: INFO: [Eval: validation]  36.68 MRR (filtered) (%)
+03:15:28: INFO: [Eval: validation]  28.40 MRR (raw) (%)
+03:15:28: INFO: [Eval: validation] Mean rank: 479
+03:15:28: INFO: [Eval: validation] Mean rank raw: 493
+03:15:28: INFO: Saving checkpoint to /home/haseebs/workspace/experiments/0007_relation_based_fb_lr/checkpoint.OWE.pth.tar.
+03:19:03: INFO: At epoch 29. Train Loss: 3.950868734579046 
+03:19:03: INFO: Starting evaluation on validation set.
+03:19:34: INFO: Git Hash: ee5d78140ea2d9245554bb8c819ca16df700d794
+
+03:19:34: INFO: Reading config from: /home/haseebs/workspace/experiments/0007_relation_based_fb_lr/config.ini
+03:19:34: INFO: Using entity2wikidata.json as wikidata file
+03:19:35: INFO: 12324 distinct entities in train having 235 relations (242489 triples).
+03:19:35: INFO: 6038 distinct entities in validation having 220 relations (9424 triples).
+03:19:35: INFO: 8897 distinct entities in test having 224 relations (22393 triples).
+03:19:35: INFO: Working with: 14405 distinct entities having 235 relations.
+03:19:35: INFO: Converting entities...
+03:19:35: INFO: Building Vocab...
+03:19:35: INFO: Building triples...
+03:19:43: INFO: Loading word vectors from: /hdd/workspace/owe/zero-shot-kgc-backup/mntdata/embeddings/wikipedia2vec/enwiki_20180420_300d.bin...
+03:20:56: INFO: Building embedding matrix
+03:20:56: INFO: Loading word vectors for entities...
+03:20:58: INFO: Matched entities with 'ID': 0
+03:20:58: INFO: Matched entities with 'ENTITIY/ID' (wiki2vec notation): 0
+03:20:58: INFO: Matched entities with augmented phrase as wiki2vec entity (level:count): {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0}
+03:20:58: INFO: Matched entities with augmented phrase (level:count): {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0}
+03:20:58: INFO: Unmatched entities: 0
+03:20:58: INFO: Created word embedding with shape: torch.Size([18804, 300])
+03:20:59: INFO: LinkPredictionModelType: ComplEx
+03:20:59: INFO: Initialized ComplEx model with 12324 entities, 235 relations embedded with 300 dimensions
+03:20:59: INFO: Loading pretrained embeddings from /home/haseebs/workspace/experiments/tab3_complex300d_fb15k-237/embeddings into ComplEx model
+03:20:59: INFO: Loading from emb ((12324, 300)) to our emb (torch.Size([12324, 300]))
+03:20:59: INFO: Loaded 12324/12324 rows.
+03:20:59: INFO: Loading from emb ((12324, 300)) to our emb (torch.Size([12324, 300]))
+03:20:59: INFO: Loaded 12324/12324 rows.
+03:20:59: INFO: Loading from emb ((235, 300)) to our emb (torch.Size([235, 300]))
+03:20:59: INFO: Loaded 235/235 rows.
+03:20:59: INFO: Loading from emb ((235, 300)) to our emb (torch.Size([235, 300]))
+03:20:59: INFO: Loaded 235/235 rows.
+03:20:59: WARNING: Config setting: 'cuda' not found. Returning None!
+03:21:03: INFO: Using averaging encoder
+03:21:03: INFO: Using Relationship based transformation
+03:21:03: INFO: Loading checkpoint /home/haseebs/workspace/experiments/0007_relation_based_fb_lr/best_checkpoint.OWE.pth.tar.
+03:21:05: INFO: Done loading checkpoint from epoch 5.
+03:21:05: INFO: Initialized OWE model, mapper and optimizer from the loaded checkpoint.
+03:21:05: INFO: Starting evaluation on test set.
+03:22:14: INFO: [Eval: test] Epoch: 5
+03:22:14: INFO: [Eval: test]  29.55 Hits@1 (%)
+03:22:14: INFO: [Eval: test]  41.06 Hits@3 (%)
+03:22:14: INFO: [Eval: test]  52.48 Hits@10 (%)
+03:22:14: INFO: [Eval: test]  37.51 MRR (filtered) (%)
+03:22:14: INFO: [Eval: test]  27.70 MRR (raw) (%)
+03:22:14: INFO: [Eval: test] Mean rank: 247
+03:22:14: INFO: [Eval: test] Mean rank raw: 260
+08:09:51: INFO: Git Hash: ee5d78140ea2d9245554bb8c819ca16df700d794
+
+08:09:51: INFO: Reading config from: /home/haseebs/workspace/experiments/0009_relation_based_fb_targetfiltering/config.ini
+08:09:51: INFO: Using entity2wikidata.json as wikidata file
+08:09:51: INFO: 12324 distinct entities in train having 235 relations (242489 triples).
+08:09:51: INFO: 6038 distinct entities in validation having 220 relations (9424 triples).
+08:09:51: INFO: 8897 distinct entities in test having 224 relations (22393 triples).
+08:09:51: INFO: Working with: 14405 distinct entities having 235 relations.
+08:09:51: INFO: Converting entities...
+08:09:51: INFO: Building Vocab...
+08:09:51: INFO: Building triples...
+08:09:59: INFO: Loading word vectors from: /hdd/workspace/owe/zero-shot-kgc-backup/mntdata/embeddings/wikipedia2vec/enwiki_20180420_300d.bin...
+08:11:25: INFO: Building embedding matrix
+08:11:25: INFO: Loading word vectors for entities...
+08:11:28: INFO: Matched entities with 'ID': 0
+08:11:28: INFO: Matched entities with 'ENTITIY/ID' (wiki2vec notation): 0
+08:11:28: INFO: Matched entities with augmented phrase as wiki2vec entity (level:count): {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0}
+08:11:28: INFO: Matched entities with augmented phrase (level:count): {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0}
+08:11:28: INFO: Unmatched entities: 0
+08:11:28: INFO: Created word embedding with shape: torch.Size([18804, 300])
+08:11:29: INFO: LinkPredictionModelType: ComplEx
+08:11:29: INFO: Initialized ComplEx model with 12324 entities, 235 relations embedded with 300 dimensions
+08:11:29: INFO: Loading pretrained embeddings from /home/haseebs/workspace/experiments/tab3_complex300d_fb15k-237/embeddings into ComplEx model
+08:11:29: INFO: Loading from emb ((12324, 300)) to our emb (torch.Size([12324, 300]))
+08:11:29: INFO: Loaded 12324/12324 rows.
+08:11:29: INFO: Loading from emb ((12324, 300)) to our emb (torch.Size([12324, 300]))
+08:11:29: INFO: Loaded 12324/12324 rows.
+08:11:29: INFO: Loading from emb ((235, 300)) to our emb (torch.Size([235, 300]))
+08:11:29: INFO: Loaded 235/235 rows.
+08:11:29: INFO: Loading from emb ((235, 300)) to our emb (torch.Size([235, 300]))
+08:11:29: INFO: Loaded 235/235 rows.
+08:11:29: WARNING: Config setting: 'cuda' not found. Returning None!
+08:11:32: INFO: Using averaging encoder
+08:11:33: INFO: Using Relationship based transformation
+08:11:33: INFO: Loading checkpoint /home/haseebs/workspace/experiments/0009_relation_based_fb_targetfiltering/best_checkpoint.OWE.pth.tar.
+08:11:35: INFO: Done loading checkpoint from epoch 5.
+08:11:35: INFO: Initialized OWE model, mapper and optimizer from the loaded checkpoint.
+08:11:35: INFO: Starting evaluation on test set.
+08:13:20: INFO: [Eval: test] Epoch: 5
+08:13:20: INFO: [Eval: test]  33.21 Hits@1 (%)
+08:13:20: INFO: [Eval: test]  46.05 Hits@3 (%)
+08:13:20: INFO: [Eval: test]  58.76 Hits@10 (%)
+08:13:20: INFO: [Eval: test]  42.05 MRR (filtered) (%)
+08:13:20: INFO: [Eval: test]  31.05 MRR (raw) (%)
+08:13:20: INFO: [Eval: test] Mean rank: 80
+08:13:20: INFO: [Eval: test] Mean rank raw: 90
